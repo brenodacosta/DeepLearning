@@ -1,3 +1,4 @@
 
 *.jpg
 datasets/*
+04_mnistbasics/datasets/*
