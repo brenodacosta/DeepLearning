@@ -1,0 +1,30 @@
+<html>
+   <body>
+      <!-- <form action = "http://127.0.0.1:5000/login" method = "post">
+      
+         <input type="file" name="image">
+         <input type="submit" name="submit" value="Upload">
+      </form>    -->
+      <!-- <script src="jquery-3.5.1.min.js"></script> -->
+      <form action ="http://127.0.0.1:5000/login" method = "post" enctype="multipart/form-data">
+      <!-- <form action ="" method = "post"> -->
+         <label>Upload an image:</label>
+         <input accept="image/*" type='file' id="imgInp" name="imgInp" />
+         <br>
+         <img id="blah" src="#" alt="your image" style="max-width: 300px; max-height: 300px"/>
+         <br>
+         <input type="submit" name="submit" value="Upload">
+     
+      </form>
+
+      <script>
+         imgInp.onchange = evt => {
+            const [file] = imgInp.files
+            if (file) {
+            blah.src = URL.createObjectURL(file)
+            }
+         }
+      </script>
+   </body>
+</html>
+
