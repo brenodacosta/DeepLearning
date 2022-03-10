@@ -12,7 +12,7 @@ plt = system()
 if plt == 'Linux': WindowsPath = PosixPath
 
 path = Path()
-learn_inf = load_learner(path/'export1.pkl', cpu=True)
+learn_inf = load_learner(path/'export.pkl', cpu=True)
 # btn_upload = widgets.FileUpload()
 # out_pl = widgets.Output()
 lbl_pred = widgets.Label()
