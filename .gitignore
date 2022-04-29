@@ -4,3 +4,5 @@ datasets/*
 04_mnistbasics/datasets/*
 *pkl
 *pth
+*gif
+*.mp4

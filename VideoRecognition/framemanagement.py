@@ -66,7 +66,7 @@ def cropresizeframe(frame,height_video,width_video):
 
     return crop_img
 
-def videoFromFrameFolder(path,framerate,video_name='untitled.mp4',):
+def videoFromFrameFolder(path,framerate,video_name='untitled.mp4'):
     # Receives the path of a folder and concatenate all present images in a mp4 video
     img_array = []
     dirFiles = os.listdir(path) # List frames
